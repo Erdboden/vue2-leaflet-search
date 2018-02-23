@@ -1,20 +1,40 @@
 {
   "name": "vue2-leaflet-search",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "A search plugin for vue2-leaflet",
+  "main": "index.js",
+  "keywords": [
+    "leaflet"
+  ],
+  "author": "Marc Ghelas",
+  "license": "ISC",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "rimraf ./dist && webpack --config ./webpack.config.js"
   },
   "dependencies": {
-    "vue": "^2.5.13"
+    "google-geocoder": "^0.2.1",
+    "leaflet-search": "^2.3.7",
+    "vue2-leaflet": "0.0.58"
   },
   "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "babel-runtime": "^6.9.2",
+    "rimraf": "^2.6.1",
     "@vue/cli-plugin-babel": "^3.0.0-beta.1",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.1",
     "@vue/cli-service": "^3.0.0-beta.1",
-    "vue-template-compiler": "^2.5.13"
+    "file-loader": "^1.1.9",
+    "image-webpack-loader": "^4.1.0",
+    "url-loader": "^0.6.2",
+    "vue": "^2.5.13",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "1.13.1",
+    "webpack-merge": "^4.1.0"
   },
   "babel": {
     "presets": [
